@@ -2,5 +2,5 @@ def ExOh(str)
 
   # code goes here
   words=str.each_char.to_a
-  return words.rindex("x")==words.rindex("o")
+  return words.count("x")==words.count("o")
 end

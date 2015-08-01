@@ -1,0 +1,8 @@
+def Palindrome(str)
+
+  # code goes here
+  words=str.each_char.to_a
+  words.delete(" ")
+  return words==words.reverse
+         
+end

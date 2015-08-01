@@ -1,0 +1,17 @@
+def RunLength(str)
+  words=str.each_char.to_a
+  array=[]
+  num=0
+  while num<words.length
+    int=1
+    if words[num]==words[num+1]
+      while words[num]==words[num+int]
+        int+=1
+      end
+    end 
+    array << (int)
+    array << words[num]
+    num+=int
+  end
+  return array.join
+end

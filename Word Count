@@ -1,0 +1,9 @@
+def WordCount(str)
+
+  # code goes here
+  words=str.each_char.to_a
+  num=words.count(" ")+1
+  return num
+         
+end
+   

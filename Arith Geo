@@ -1,0 +1,23 @@
+def ArithGeo(arr)
+	num=0
+  arith=0
+  geo=0
+      while (num+2)<arr.length
+      if (arr[num+1]-arr[num])==(arr[num+2]-arr[num+1])
+        arith+=1
+        num+=1
+      elsif (arr[num+1]/arr[num])==(arr[num+2]/arr[num+1])
+        geo+=1
+        num+=1
+      else 
+        num+=1
+      end
+      end
+    trust=(-1)
+    if arith==num
+      trust="Arithmetic"
+    elsif geo==num
+      trust="Geometric"
+    end
+    return trust
+end

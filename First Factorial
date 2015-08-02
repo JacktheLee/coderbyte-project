@@ -1,0 +1,10 @@
+def FirstFactorial(num)
+	@num2=1
+  # code goes here
+  for i in 1..num
+    @num2=@num2*i
+  end
+  num=@num2
+  return num
+         
+end

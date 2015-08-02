@@ -1,0 +1,12 @@
+def SimpleAdding(num)
+
+  # code goes here
+  count=0
+  sum=0
+  while count<num
+    count=count+1
+    sum=sum+count
+  end
+  return sum
+         
+end

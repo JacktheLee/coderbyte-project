@@ -1,0 +1,22 @@
+def LetterChanges(str)
+
+  # code goes here
+  str.each_char |x|
+    next_char=''
+  sum=''
+   if(x.match(/[a-zA-Z]/))
+     if(x=z || x=Z)
+       next_char='a'
+     else if
+       next_char=(x.each_byte.first+1).ord.chr
+     end
+   else if
+     next_char=c
+   end
+  if (next_char.match(/[aeiou]/))
+    next_char=next_char.upcase
+  end
+  sum=sum+next_char
+  return sum
+         
+end
